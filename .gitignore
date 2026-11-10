@@ -4,3 +4,5 @@
 /target/
 /logs/
 /dist/
+# Asset generation tooling + source art (see .bcrtools/generate.js)
+.bcrtools/
