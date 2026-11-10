@@ -1,8 +1,8 @@
-appId: 'helioslauncher'
-productName: 'Helios Launcher'
+appId: 'bcrlauncher'
+productName: 'BCR Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2026 Daniel Scalzi'
+copyright: 'Copyright © 2026 Black Clover Republic'
 
 asar: true
 compression: 'maximum'
@@ -39,10 +39,10 @@ mac:
 # Linux Configuration
 linux: 
   target: 'AppImage'
-  maintainer: 'Daniel Scalzi'
-  vendor: 'Daniel Scalzi'
-  synopsis: 'Modded Minecraft Launcher'
-  description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
+  maintainer: 'Black Clover Republic'
+  vendor: 'Black Clover Republic'
+  synopsis: 'Black Clover Republic Launcher'
+  description: 'Custom launcher which allows users to join the Black Clover Republic server. All mods, configurations, and updates are handled automatically.'
   category: 'Game'
 
 

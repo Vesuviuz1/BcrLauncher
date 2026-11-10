@@ -11,22 +11,22 @@ The distribution index is written in JSON. The general format of the index is as
     "version": "1.0.0",
     "discord": {
         "clientId": "12334567890123456789",
-        "smallImageText": "WesterosCraft",
+        "smallImageText": "BCR",
         "smallImageKey": "seal-circle"
     },
-    "rss": "https://westeroscraft.com/articles/index.rss",
+    "rss": "https://blackcloverrepublic.com/news.rss",
     "servers": [
         {
             "id": "Example_Server",
-            "name": "WesterosCraft Example Client",
-            "description": "Example WesterosCraft server. Connect for fun!",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/example_icon.png",
+            "name": "BCR Example Client",
+            "description": "Example Black Clover Republic server. Connect for fun!",
+            "icon": "https://files.blackcloverrepublic.com/launcher/files/example_icon.png",
             "version": "0.0.1",
-            "address": "mc.westeroscraft.com:1337",
+            "address": "play.blackcloverrepublic.com:1337",
             "minecraftVersion": "1.11.2",
             "discord": {
                 "shortId": "Example",
-                "largeImageText": "WesterosCraft Example Server",
+                "largeImageText": "BCR Example Server",
                 "largeImageKey": "server-example"
             },
             "mainServer": true,
@@ -47,10 +47,10 @@ The distribution index is written in JSON. The general format of the index is as
     "version": "1.0.0",
     "discord": {
         "clientId": "12334567890123456789",
-        "smallImageText": "WesterosCraft",
+        "smallImageText": "BCR",
         "smallImageKey": "seal-circle"
     },
-    "rss": "https://westeroscraft.com/articles/index.rss",
+    "rss": "https://blackcloverrepublic.com/news.rss",
     "servers": []
 }
 ```
@@ -82,15 +82,15 @@ A URL to a RSS feed. Used for loading news.
 ```JSON
 {
     "id": "Example_Server",
-    "name": "WesterosCraft Example Client",
-    "description": "Example WesterosCraft server. Connect for fun!",
-    "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/example_icon.png",
+    "name": "BCR Example Client",
+    "description": "Example Black Clover Republic server. Connect for fun!",
+    "icon": "https://files.blackcloverrepublic.com/launcher/files/example_icon.png",
     "version": "0.0.1",
-    "address": "mc.westeroscraft.com:1337",
+    "address": "play.blackcloverrepublic.com:1337",
     "minecraftVersion": "1.11.2",
     "discord": {
         "shortId": "Example",
-        "largeImageText": "WesterosCraft Example Server",
+        "largeImageText": "BCR Example Server",
         "largeImageKey": "server-example"
     },
     "mainServer": true,
@@ -432,7 +432,7 @@ Ex.
             "artifact": {
                 "size": 32999,
                 "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/launchwrapper-1.12.jar"
+                "url": "https://files.blackcloverrepublic.com/launcher/files/1.11.2/launchwrapper-1.12.jar"
             }
         }
     ]
@@ -496,7 +496,7 @@ Ex.
     "artifact": {
         "size": 1685422,
         "MD5": "3a98b5ed95810bf164e71c1a53be568d",
-        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/liteloader-1.11.2.jar"
+        "url": "https://files.blackcloverrepublic.com/launcher/files/1.11.2/liteloader-1.11.2.jar"
     },
     "subModules": [
         "All LiteMods go here"
@@ -520,7 +520,7 @@ Ex.
     "artifact": {
         "size": 62477,
         "MD5": "13560a58a79b46b82057686543e8d727",
-        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/jopt-simple-4.6.jar"
+        "url": "https://files.blackcloverrepublic.com/launcher/files/1.11.2/jopt-simple-4.6.jar"
     }
 }
 ```
@@ -534,13 +534,13 @@ The module type `ForgeMod` represents a mod loaded by the Forge Mod Loader (FML)
 Ex.
 ```json
 {
-    "id": "com.westeroscraft:westerosblocks:3.0.0-beta-6-133",
-    "name": "WesterosBlocks (3.0.0-beta-6-133)",
+    "id": "com.bcr:bcrspells:3.0.0-beta-6-133",
+    "name": "BCRSpells (3.0.0-beta-6-133)",
     "type": "ForgeMod",
     "artifact": {
         "size": 16321712,
         "MD5": "5a89e2ab18916c18965fc93a0766cc6e",
-        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/WesterosBlocks.jar"
+        "url": "https://files.blackcloverrepublic.com/launcher/prod-1.11.2/mods/BCRSpells.jar"
     }
 }
 ```
@@ -564,7 +564,7 @@ Ex.
     "artifact": {
         "size": 1670811,
         "MD5": "16080785577b391d426c62c8d3138558",
-        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/macrokeybindmod.litemod"
+        "url": "https://files.blackcloverrepublic.com/launcher/prod-1.11.2/mods/macrokeybindmod.litemod"
     }
 }
 ```
@@ -579,14 +579,14 @@ Ex.
 
 ```json
 {
-    "id": "com.westeroscraft:westeroscraftrp:2017-08-16",
-    "name": "WesterosCraft Resource Pack (2017-08-16)",
+    "id": "com.bcr:bcrresources:2017-08-16",
+    "name": "BCR Resource Pack (2017-08-16)",
     "type": "file",
      "artifact": {
         "size": 45241339,
         "MD5": "ec2d9fdb14d5c2eafe5975a240202f1a",
-        "path": "resourcepacks/WesterosCraft.zip",
-        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/resourcepacks/WesterosCraft.zip"
+        "path": "resourcepacks/BCR.zip",
+        "url": "https://files.blackcloverrepublic.com/launcher/prod-1.11.2/resourcepacks/BCR.zip"
     }
 }
 ```
