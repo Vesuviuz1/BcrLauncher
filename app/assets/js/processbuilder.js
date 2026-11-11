@@ -840,7 +840,14 @@ class ProcessBuilder {
         for(let mdl of mdls){
             const type = mdl.rawModule.type
             if(type === Type.ForgeHosted || type === Type.Fabric || type === Type.Library){
-                libs[mdl.getVersionlessMavenIdentifier()] = mdl.getPath()
+                // Honour an explicit classpath:false, as _resolveModuleLibraries already
+                // does for submodules. NeoForge needs this: its universal jar must be
+                // downloaded (FML finds it via -DlibraryDirectory) but kept off the
+                // classpath, or net.minecraft packages get defined in the boot layer and
+                // the game layer fails to resolve them.
+                if(mdl.rawModule.classpath ?? true){
+                    libs[mdl.getVersionlessMavenIdentifier()] = mdl.getPath()
+                }
                 if(mdl.subModules.length > 0){
                     const res = this._resolveModuleLibraries(mdl)
                     libs = {...libs, ...res}
